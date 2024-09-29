@@ -1,0 +1,8 @@
+{
+    "window": {
+        "width": 1600,
+        "height": 900,
+        "title": "Trailer Sim"
+    },
+    "entry_scene": "scenes"
+}

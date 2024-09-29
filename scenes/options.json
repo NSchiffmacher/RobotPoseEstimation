@@ -1,0 +1,66 @@
+{
+    "fps_target": 120,
+    "physics_frame": 1,
+
+    "unit_vector_size_in_px": 50,
+    "zoom_speed": 1,
+    "zoom_speed_if_scroll": 5,
+    "zoom_max": 5,
+    "zoom_min": 0.1,
+
+    "steering_speed": 90,
+    "steering_zeroing_speed": 50,
+    "max_steering_deg": 80,
+
+    "draw_virtual_wheels": false,
+    "debug_draw_reference_frame": false,
+
+    "acceleration": 5,
+    "max_velocity": 10,
+    "deceleration": 5,
+    "min_velocity": -1,
+
+    "background_color": [180,180,180],
+    "keys": {
+        "quitter": {
+            "trigger": ["K_ESCAPE"],
+            "callback": null
+        },
+        "pause": {
+            "trigger": ["K_p"],
+            "callback": null
+        },
+        "zoom_in": {
+            "trigger": ["K_EQUALS", "K_KP_PLUS"],
+            "callback": null
+        },
+        "zoom_out": {
+            "trigger": ["K_EQUALS", "K_KP_MINUS"],
+            "callback": null
+        },
+        "steer_left": {
+            "trigger": ["K_q", "K_LEFT"],
+            "callback": null
+        },
+        "steer_right": {
+            "trigger": ["K_d", "K_RIGHT"],
+            "callback": null
+        },
+        "increase_velocity": {
+            "trigger": ["K_z", "K_UP"],
+            "callback": null
+        },
+        "decrease_velocity": {
+            "trigger": ["K_s", "K_DOWN"],
+            "callback": null
+        },
+        "breaking": {
+            "trigger": ["K_b"],
+            "callback": null
+        },
+        "estop": {
+            "trigger": ["K_e"],
+            "callback": null
+        }
+    }
+}
