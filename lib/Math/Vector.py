@@ -158,6 +158,9 @@ class Vector2:
             int(self.y)   
         )
     
+    def to_np(self):
+        return numpy.array([self.x, self.y])
+    
 
     def equals(self, obj):
         return obj.x == self.x and obj.y == self.y

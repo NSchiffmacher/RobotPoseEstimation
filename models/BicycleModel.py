@@ -62,6 +62,16 @@ class BicycleModel(BaseModel):
         self.position.y += dt * self.y_dot
         self.theta_rad  = (self.theta_rad + dt *  self.theta_dot) % (2 * math.pi)
 
+    def getNoisyVelocity(self):
+        return self.velocity * (1 + np.random.normal(0, 0.10 / 3))
+    
+    def getNoisySteering(self):
+        return self.steering_rad + np.random.normal(0, (np.pi / 20) / 3)
+    
+    def getNoisyPosition(self):
+        return self.position + V(np.random.normal(0, 0.40 / 3), np.random.normal(0, 0.40 / 3))
+    
+    
 
     def vehicleFrameToGlobalFrame(self, point: V) -> V:
         """Moves a point from the vehicle frame to the global frame

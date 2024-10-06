@@ -10,7 +10,7 @@
 
     "steering_speed": 90,
     "steering_zeroing_speed": 50,
-    "max_steering_deg": 80,
+    "max_steering_deg": 60,
 
     "draw_virtual_wheels": false,
     "debug_draw_reference_frame": false,
